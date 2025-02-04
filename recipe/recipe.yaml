@@ -24,12 +24,8 @@ requirements:
     - openssl
 
 tests:
-  - requirements:
-      run:
-        - if: win
-          then: m2-grep
-    script:
-      - asm-lsp 2>&1 | grep -q "Starting asm_lsp..."
+  - script:
+    - asm-lsp --help
 
 about:
   license: BSD-2-Clause
