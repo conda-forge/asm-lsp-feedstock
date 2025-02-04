@@ -8,7 +8,7 @@ set OPENSSL_NO_VENDOR=1
 cargo-bundle-licenses --format yaml --output THIRDPARTY.yml || goto :error
 
 :: build statically linked binary with Rust
-cargo install --bins --no-track --locked --root %LIBRARY_PREFIX% --path . || goto :error
+cargo install --bins --no-track --locked --root %LIBRARY_PREFIX% --path asm-lsp || goto :error
 
 goto :EOF
 
