@@ -1,5 +1,5 @@
 context:
-  version: "0.10.0"
+  version: "0.10.1"
 
 package:
   name: asm-lsp
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/bergercookie/asm-lsp/archive/v${{ version }}.tar.gz
-  sha256: 4755848aa7d88856be7e40d0930990b95b46c4593a53db3809d3ba7214d9d16d
+  sha256: 9500dd7234966ae9fa57d8759edf1d165acd06c4924d7dbeddb7d52eb0ce59d6
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
 
 tests:
   - script:
-    - asm-lsp --help
+      - asm-lsp --help
 
 about:
   license: BSD-2-Clause
